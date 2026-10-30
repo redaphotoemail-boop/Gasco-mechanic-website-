@@ -201,3 +201,70 @@ tbody tr:hover{background:rgba(208,229,249,.08)}
 .status-empty{font-size:12px;padding:5px 0}
 .status-table-tip{font-size:11px;margin-top:12px;color:#9eb3c7}
 @media(max-width:670px){.status-table thead th{padding:12px 10px}.status-table thead th:nth-child(2),.status-table tbody .status-summary-row td:nth-child(2){display:none}.status-table tbody td{padding:16px 12px}.status-table thead th:nth-child(3){width:70px}.status-table thead th:last-child{width:32px}.status-table tbody td:first-child strong{font-size:13px}.status-detail-row td{padding:10px 12px !important}}
+
+/* GASCO bespoke editorial identity — local repair atelier, not generic SaaS. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&display=swap');
+.gasco-site{overflow:hidden}
+.gasco-site em{font-style:normal;color:#b0c8df}
+.brand-emblem{display:grid;place-items:center;width:47px;height:47px;background:#f5f8ff;border-radius:6px;overflow:hidden;padding:2px}
+.brand-emblem img{width:100%;height:100%;object-fit:contain}
+.brand b{font-family:'Barlow Condensed',Manrope,sans-serif;font-size:22px;font-weight:800;letter-spacing:.125em}
+.brand small{font-size:8px;letter-spacing:.17em}
+.gasco-utility{height:34px;padding:0 max(4%,calc((100vw - 1300px)/2));display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid rgba(221,236,250,.1);background:#061221;color:#afc5d9;font-size:9px;font-weight:600;letter-spacing:.12em}
+.gasco-utility a{display:flex;align-items:center;gap:7px;color:#e3eff9}
+.gasco-hero{min-height:650px;gap:7%;padding-top:75px;padding-bottom:85px}
+.gasco-hero .hero-copy{max-width:690px}
+.gasco-hero .hero-copy h1{font-family:'Barlow Condensed',Manrope,sans-serif;line-height:.92;letter-spacing:-.023em;font-size:clamp(4.6rem,8.5vw,9.1rem);font-weight:700;text-transform:uppercase;margin:29px 0}
+.gasco-hero .hero-copy h1 em{color:#b8d2e8}
+.gasco-hero .hero-copy>p{font-size:17px;line-height:1.8;max-width:470px;color:#c0cfde;margin-bottom:27px}
+.hero-footnote{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:48px;font-size:9px;color:#9bb7ce;letter-spacing:.13em;font-weight:700}
+.hero-footnote-line{width:34px;height:1px;background:#93b7d6}
+.hero-footnote i{width:4px;height:4px;background:#b74c54;border-radius:50%}
+.gasco-hero-art{height:510px;background:linear-gradient(150deg,#223f62 0%,#0b1d35 50%,#071429 100%);position:relative;display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;border:1px solid rgba(225,235,250,.22);box-shadow:18px 18px 0 rgba(121,157,190,.07),0 30px 100px rgba(2,8,20,.27)}
+.gasco-hero-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 60% 30%,rgba(99,146,195,.25),transparent 66%),linear-gradient(120deg,transparent 40%,rgba(255,255,255,.035) 55%,transparent 70%)}
+.gasco-hero-art-top,.gasco-hero-art-bottom{z-index:1;width:100%;display:flex;justify-content:space-between;align-items:center;gap:15px;padding:24px 25px;font-size:10px;font-weight:700;letter-spacing:.11em;color:#bfd1e5;border-color:rgba(231,242,251,.15)}
+.gasco-hero-art-top{border-bottom:1px solid rgba(231,242,251,.15)}
+.gasco-hero-art-bottom{border-top:1px solid rgba(231,242,251,.15)}
+.gasco-hero-center{z-index:1;display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center;padding:26px}
+.gasco-hero-center img{width:146px;height:146px;object-fit:contain;filter:drop-shadow(0 12px 23px rgba(0,0,0,.2))}
+.gasco-hero-wordmark{font-family:'Barlow Condensed',sans-serif;font-size:clamp(3.6rem,5.1vw,6.4rem);font-weight:800;color:#f5f8fc;line-height:.83;letter-spacing:-.02em}
+.gasco-hero-wordmark span{font-size:.23em;letter-spacing:.24em;color:#bbcede}
+.gasco-shop-strip{background:#e6edf5;color:#122943;min-height:99px;padding:18px max(4%,calc((100vw - 1300px)/2));display:flex;justify-content:space-between;gap:24px;align-items:center}
+.gasco-shop-strip>span{font-size:10px;font-weight:700;letter-spacing:.15em;color:#45647f;max-width:150px}
+.gasco-shop-strip>div{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:clamp(14px,3vw,45px)}
+.gasco-shop-strip b{font-family:'Barlow Condensed',sans-serif;font-size:clamp(18px,2.2vw,29px);font-weight:600;letter-spacing:-.02em}
+.gasco-strip-end{display:flex;align-items:center;gap:8px}
+.gasco-section-top{display:grid;grid-template-columns:1fr minmax(220px,330px);align-items:end;gap:40px;margin-bottom:40px}
+.gasco-section-top h2,.gasco-visit h2,.gasco-promise h2{font-family:'Barlow Condensed',sans-serif;font-weight:650;font-size:clamp(3.1rem,5.5vw,6rem);text-transform:uppercase;line-height:.99;letter-spacing:-.014em;margin-top:23px}
+.gasco-section-top>p{font-size:14px;color:#b0c7da}
+.gasco-services .service-grid{gap:1px;background:rgba(215,231,245,.16);border:1px solid rgba(215,231,245,.16);grid-template-columns:repeat(4,minmax(0,1fr))}
+.gasco-services .service{border:0;background:#0d233c;border-radius:0;min-height:330px;justify-content:space-between;padding:29px 23px}
+.gasco-services .service:nth-child(even){background:#142b45}
+.gasco-services .service:hover{background:#1e3a55}
+.service-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.service-top small{font-size:10px;letter-spacing:.1em;color:#8baac5}
+.service-top svg{color:#bcd4e9}
+.service-copy>span{display:inline-block;color:#9eb9d0;letter-spacing:.1em;font-size:9px;text-transform:uppercase;margin-bottom:15px}
+.gasco-services .service h3{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:600;line-height:1.05;letter-spacing:0;text-transform:uppercase}
+.gasco-services .service p{font-size:12px;line-height:1.75;margin-top:16px;color:#b8c9d8}
+.gasco-promise{display:grid;grid-template-columns:.16fr 1.1fr .9fr;gap:55px;align-items:start;padding-top:115px;padding-bottom:115px;background:linear-gradient(125deg,rgba(28,60,90,.64),rgba(10,27,46,.36))!important}
+.gasco-promise-code{font-family:'Barlow Condensed',sans-serif;font-size:25px;color:#779cb9}
+.gasco-promise-copy h2{margin-bottom:22px}
+.gasco-promise-copy>p{max-width:510px;font-size:14px;line-height:1.9;margin-bottom:25px}
+.gasco-timeline{border:1px solid rgba(224,237,248,.19);padding:29px;background:rgba(5,19,35,.29)}
+.timeline-title{font-size:10px;color:#98b4cc;letter-spacing:.12em;margin-bottom:22px;font-weight:700}
+.timeline-row{min-height:65px;border-top:1px solid rgba(217,233,247,.14);display:flex;gap:20px;align-items:center}
+.timeline-row>span:first-child{font-family:'Barlow Condensed',sans-serif;font-size:16px;color:#7da6c8}
+.timeline-row b{flex:1;color:#e8f2fb;font-size:14px;font-weight:500}
+.timeline-row>svg{color:#9ed7c4}
+.timeline-hollow{width:10px;height:10px;border-radius:50%;border:1px solid #779bb8}
+.gasco-visit{display:grid;grid-template-columns:1fr .8fr;align-items:center;gap:80px;padding-top:110px;padding-bottom:130px}
+.gasco-visit>div:first-child>p{font-size:17px;line-height:1.8;margin:25px 0 33px;color:#c6d7e6}
+.gasco-address-card{position:relative;overflow:hidden;background:linear-gradient(130deg,#173652,#0b1c33);min-height:415px;padding:36px;border:1px solid rgba(207,230,248,.2);display:flex;align-items:flex-start;flex-direction:column}
+.gasco-address-watermark{position:absolute;right:-30px;bottom:-125px;font-family:'Barlow Condensed',sans-serif;font-size:510px;line-height:.85;color:rgba(178,215,245,.04);pointer-events:none}
+.gasco-address-card h3{font-family:'Barlow Condensed',sans-serif;font-size:clamp(4rem,6.3vw,8rem);line-height:.84;letter-spacing:-.03em;font-weight:650;margin:38px 0 22px}
+.gasco-address-card p{font-size:13px;color:#bfcee0}
+.gasco-address-card>span{margin-top:auto;font-size:9px;color:#a5bfd5;letter-spacing:.16em}
+@media(max-width:1050px){.gasco-hero .hero-copy h1{font-size:clamp(4rem,8vw,6.6rem)}.gasco-hero-art{height:455px}.gasco-promise{grid-template-columns:1fr 1fr;gap:30px}.gasco-promise-code{display:none}.gasco-visit{gap:35px}}
+@media(max-width:700px){.gasco-utility{padding:0 5%;font-size:8px}.gasco-utility span{font-size:7px;letter-spacing:.06em}.gasco-hero{min-height:auto;padding-top:55px;padding-bottom:55px}.gasco-hero .hero-copy h1{font-size:clamp(4rem,14vw,6.2rem)}.gasco-hero-art{height:420px}.gasco-hero-center img{width:118px;height:118px}.gasco-shop-strip{flex-direction:column;align-items:flex-start;gap:13px;padding:26px 6%}.gasco-shop-strip>div{justify-content:flex-start;gap:15px}.gasco-section-top{grid-template-columns:1fr;gap:18px}.gasco-services .service-grid{grid-template-columns:1fr 1fr}.gasco-services .service{padding:19px;min-height:285px}.gasco-services .service h3{font-size:23px}.gasco-promise{grid-template-columns:1fr;padding-top:70px;padding-bottom:75px}.gasco-visit{grid-template-columns:1fr;padding-top:70px;padding-bottom:90px}.gasco-address-card{min-height:340px}.gasco-address-card h3{font-size:5.2rem}}
+@media(max-width:390px){.gasco-services .service-grid{grid-template-columns:1fr}.gasco-services .service{min-height:230px}.gasco-hero .hero-copy h1{font-size:3.8rem}.gasco-utility{font-size:7px}}
