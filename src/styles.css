@@ -268,3 +268,63 @@ tbody tr:hover{background:rgba(208,229,249,.08)}
 @media(max-width:1050px){.gasco-hero .hero-copy h1{font-size:clamp(4rem,8vw,6.6rem)}.gasco-hero-art{height:455px}.gasco-promise{grid-template-columns:1fr 1fr;gap:30px}.gasco-promise-code{display:none}.gasco-visit{gap:35px}}
 @media(max-width:700px){.gasco-utility{padding:0 5%;font-size:8px}.gasco-utility span{font-size:7px;letter-spacing:.06em}.gasco-hero{min-height:auto;padding-top:55px;padding-bottom:55px}.gasco-hero .hero-copy h1{font-size:clamp(4rem,14vw,6.2rem)}.gasco-hero-art{height:420px}.gasco-hero-center img{width:118px;height:118px}.gasco-shop-strip{flex-direction:column;align-items:flex-start;gap:13px;padding:26px 6%}.gasco-shop-strip>div{justify-content:flex-start;gap:15px}.gasco-section-top{grid-template-columns:1fr;gap:18px}.gasco-services .service-grid{grid-template-columns:1fr 1fr}.gasco-services .service{padding:19px;min-height:285px}.gasco-services .service h3{font-size:23px}.gasco-promise{grid-template-columns:1fr;padding-top:70px;padding-bottom:75px}.gasco-visit{grid-template-columns:1fr;padding-top:70px;padding-bottom:90px}.gasco-address-card{min-height:340px}.gasco-address-card h3{font-size:5.2rem}}
 @media(max-width:390px){.gasco-services .service-grid{grid-template-columns:1fr}.gasco-services .service{min-height:230px}.gasco-hero .hero-copy h1{font-size:3.8rem}.gasco-utility{font-size:7px}}
+
+/* Refined homepage proportions: concise headline and balanced service architecture. */
+.gasco-hero .hero-copy h1{
+  font-family:'Barlow Condensed',Manrope,sans-serif;
+  font-size:clamp(4.6rem,8vw,8.1rem);
+  line-height:.94;
+  max-width:660px;
+  text-wrap:balance;
+}
+.gasco-hero{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:5.5%}
+.gasco-services .gasco-section-top{grid-template-columns:minmax(0,1fr) minmax(0,320px);align-items:center;gap:45px}
+.gasco-services .gasco-section-top h2{max-width:720px}
+.gasco-services .service-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  background:transparent;
+  border:0;
+  align-items:stretch;
+}
+.gasco-services .service,
+.gasco-services .service:nth-child(even){
+  position:relative;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:left;
+  min-height:230px;
+  padding:27px 31px;
+  background:linear-gradient(140deg,rgba(31,64,96,.8),rgba(11,30,51,.95));
+  border:1px solid rgba(218,234,248,.17);
+  border-radius:8px;
+}
+.gasco-services .service:nth-child(2),
+.gasco-services .service:nth-child(3){background:linear-gradient(140deg,rgba(21,49,78,.8),rgba(9,27,47,.94))}
+.gasco-services .service:hover{border-color:rgba(210,231,248,.48);background:linear-gradient(140deg,rgba(40,75,109,.95),rgba(12,37,62,.97))}
+.gasco-services .service .service-top{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.gasco-services .service .service-copy{width:100%;max-width:390px;align-self:flex-start;margin-top:29px}
+.gasco-services .service h3{font-size:clamp(26px,2.8vw,35px);line-height:1.06;margin:0}
+.gasco-services .service p{font-size:13px;max-width:360px;line-height:1.65}
+@media(max-width:900px){
+  .gasco-hero{grid-template-columns:1fr}
+  .gasco-hero .hero-copy h1{font-size:clamp(4.2rem,10vw,7rem)}
+}
+@media(max-width:700px){
+  .gasco-services .gasco-section-top{grid-template-columns:1fr;gap:20px}
+  .gasco-services .service-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .gasco-services .service,.gasco-services .service:nth-child(even){padding:21px;min-height:244px}
+  .gasco-services .service .service-copy{margin-top:22px}
+  .gasco-services .service h3{font-size:25px}
+  .gasco-services .service p{font-size:12px}
+  .gasco-hero .hero-copy h1{font-size:clamp(4rem,13vw,6rem)}
+}
+@media(max-width:520px){
+  .gasco-services .service-grid{grid-template-columns:1fr}
+  .gasco-services .service,.gasco-services .service:nth-child(even){min-height:198px;padding:23px}
+  .gasco-services .service .service-copy{margin-top:26px}
+  .gasco-services .service h3{font-size:29px}
+}
