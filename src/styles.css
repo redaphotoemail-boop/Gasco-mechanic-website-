@@ -166,3 +166,38 @@ tbody tr:hover{background:rgba(208,229,249,.08)}
  .hero-visual{border-radius:8px}
  .quick-item,.stat,.panel,.profile-head,.status-column{border-radius:8px}
 }
+
+/* Vehicle overview — single, expandable operational table. */
+.status-table-wrap{border:1px solid rgba(220,236,250,.16);background:rgba(9,28,48,.66);border-radius:11px;overflow:hidden}
+.status-table{width:100%;border-collapse:collapse;min-width:0}
+.status-table thead th{padding:16px 23px;background:rgba(206,227,246,.055);font-size:10px;letter-spacing:.13em;color:#a4bcd0}
+.status-table thead th:nth-child(3){text-align:center;width:100px}
+.status-table thead th:last-child{width:48px}
+.status-table tbody td{padding:19px 23px;border-top:1px solid rgba(220,236,250,.095);vertical-align:middle}
+.status-summary-row{cursor:pointer;transition:background .17s ease}
+.status-summary-row:hover,.status-summary-row.is-open{background:rgba(159,205,235,.095)}
+.status-summary-row td:first-child{white-space:nowrap}
+.status-summary-row td:first-child strong{display:inline-block;font-weight:650;font-size:14px;color:#edf5fc}
+.status-indicator{display:inline-block;width:8px;height:8px;margin-right:14px;vertical-align:middle;border-radius:50%;background:#8ba9c7}
+.status-indicator-booked{background:#a1bad2}
+.status-indicator-progress{background:#79b9e4}
+.status-indicator-attention{background:#e2bb7a}
+.status-indicator-late{background:#e4a19f}
+.status-indicator-ready{background:#8dd4bf}
+.status-vehicle-preview{color:#acc0d4;font-size:12px;line-height:1.6}
+.status-table tbody td:nth-child(3){text-align:center}
+.status-count{display:inline-flex;min-width:32px;height:31px;padding:0 8px;align-items:center;justify-content:center;border-radius:8px;background:rgba(198,223,243,.11);color:#f2f7fd;font-weight:700;font-size:14px}
+.status-chevron{color:#8aacc8;transition:transform .2s ease}
+.status-chevron.rotated{transform:rotate(90deg)}
+.status-detail-row td{padding:10px 22px 20px !important;background:rgba(7,23,42,.42)}
+.status-detail-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:9px}
+.status-detail-car{border:1px solid rgba(210,231,247,.16);background:rgba(34,66,98,.51);border-radius:8px;color:#e9f3fd;padding:13px;display:flex;align-items:center;gap:12px;text-align:left;transition:border .2s}
+.status-detail-car:hover{border-color:#93bbd8}
+.status-detail-car>svg:first-child{color:#9fc2dc}
+.status-detail-car>svg:last-child{margin-left:auto;color:#accce6}
+.status-detail-car span{display:flex;flex-direction:column;gap:5px}
+.status-detail-car b{font-size:12px}
+.status-detail-car small{font-size:11px;color:#a3bed2}
+.status-empty{font-size:12px;padding:5px 0}
+.status-table-tip{font-size:11px;margin-top:12px;color:#9eb3c7}
+@media(max-width:670px){.status-table thead th{padding:12px 10px}.status-table thead th:nth-child(2),.status-table tbody .status-summary-row td:nth-child(2){display:none}.status-table tbody td{padding:16px 12px}.status-table thead th:nth-child(3){width:70px}.status-table thead th:last-child{width:32px}.status-table tbody td:first-child strong{font-size:13px}.status-detail-row td{padding:10px 12px !important}}
