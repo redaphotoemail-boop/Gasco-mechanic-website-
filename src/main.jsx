@@ -40,7 +40,7 @@ return <><header className="header"><button className="brand" onClick={()=>{setV
 <div className="gasco-utility"><span>147 MILFORD STREET · UPTON, MASSACHUSETTS</span><a href="tel:+15085291600"><Phone size={12}/> 508 529 1600</a></div>
 <section className="hero gasco-hero">
 <div className="hero-copy"><div className="eyebrow"><span className="dot"/> UPTON'S INDEPENDENT REPAIR SHOP</div>
-<h1>The right hands.<br/><em>For the road ahead.</em></h1>
+<h1>Good care.<br/><em>Better miles.</em></h1>
 <p>Everyday maintenance. Difficult diagnostics. European and domestic vehicles. Right here on Milford Street.</p>
 <div className="actions"><button className="btn dark" onClick={()=>setModal('booking')}>Request service <ArrowRight size={17}/></button><a className="btn ghost" href="tel:+15085291600"><Phone size={15}/> Speak with the shop</a></div>
 <div className="hero-footnote"><span className="hero-footnote-line"/><span>MA STATE INSPECTIONS</span><i/> <span>EUROPEAN & DOMESTIC REPAIR</span></div></div>
