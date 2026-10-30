@@ -42,3 +42,127 @@ body{color:var(--ink);background:var(--pale)}
 .journey-notice{border-radius:11px;background:#fff4e4;border:1px solid #f0ddbd;color:#966d30;padding:13px;font-size:12px}
 @media(max-width:1050px){.status-board{grid-template-columns:repeat(5,minmax(205px,1fr))}}
 @media(max-width:670px){.status-board{margin-left:-4px;margin-right:-4px}.status-column{min-height:220px}.journey-step{min-height:48px}}
+
+/* GASCO Signature — deep midnight-blue gradient, restrained editorial detailing.
+   Overrides legacy generic blue/slate styles without changing app workflows. */
+:root{--night:#071426;--ocean:#112c49;--blue:#172e4c;--silver:#b9cfe4;--mist:#dfe9f2;--stroke:rgba(210,228,244,.16);--glass:rgba(18,39,64,.72);--ink:#f5f8fd}
+html{background:#081a2e}
+body{
+ color:var(--ink);
+ background:radial-gradient(ellipse 85% 48% at 85% 6%,rgba(48,102,150,.33),transparent 75%),
+ radial-gradient(ellipse 60% 48% at 4% 68%,rgba(29,80,119,.22),transparent 75%),
+ linear-gradient(132deg,#071322 0%,#122c47 43%,#091727 100%);
+ background-attachment:fixed;
+}
+h1,h2,h3{color:#f6f8fc}
+p{color:#afc0d3}
+.header{background:rgba(7,19,34,.84);border-bottom:1px solid rgba(225,236,247,.11);backdrop-filter:blur(22px)}
+.brand{color:#f9fbff}
+.brand .mark{background:linear-gradient(145deg,#24466a,#10243d);color:#f4f8fe;border:1px solid rgba(220,235,255,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.brand small{color:#9fb2c8}
+.nav a,.nav-link{color:#c8d4e1}
+.nav a:hover,.nav-link:hover{color:#fff}
+.hamburger{color:white}
+.btn.dark{background:#e7eef6;color:#0c2238;border:1px solid rgba(255,255,255,.35);box-shadow:0 8px 28px rgba(1,10,23,.14)}
+.btn.dark:hover{background:#fff}
+.btn.ghost{color:#e8f1fb}
+.btn.light{background:rgba(201,222,243,.09);border-color:rgba(215,233,250,.2);color:#eaf2fb}
+.btn.light:hover{background:rgba(201,222,243,.16)}
+.demo-banner{background:rgba(21,47,74,.92);color:#afc9df;border-color:rgba(213,230,245,.12);letter-spacing:.04em}
+.hero{position:relative;isolation:isolate;min-height:680px}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 35% 45% at 65% 40%,rgba(78,128,171,.12),transparent 90%)}
+.eyebrow{color:#9ebbd4}
+.dot{background:#9fbfdb}
+.hero-copy>p{color:#bdcbdb}
+.hero h1{font-size:clamp(3.4rem,6.1vw,6.7rem);font-weight:650;line-height:1.06;letter-spacing:-.072em}
+.hero h1 em{color:#a1bfd9}
+.hero-visual{background:linear-gradient(142deg,rgba(42,83,119,.85),rgba(10,32,53,.92));color:#accce5;border:1px solid rgba(215,235,250,.17);border-radius:9px;box-shadow:0 28px 68px rgba(0,8,21,.21)}
+.visual-grid{background-image:linear-gradient(rgba(229,242,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(229,242,255,.035) 1px,transparent 1px);background-size:55px 55px}
+.hero-note{background:rgba(8,25,44,.85);border:1px solid rgba(220,235,250,.12);color:#ecf5ff;border-radius:7px;backdrop-filter:blur(12px)}
+.hero-note span{color:#94b1c9}
+.site-section,.site-section.pale{background:transparent;border-top:1px solid rgba(225,235,249,.1)}
+.site-section.pale{background:linear-gradient(125deg,rgba(54,99,135,.23),rgba(7,23,41,.1))}
+.site-section.pale p{color:#bfcfe0}
+.service{background:rgba(19,41,66,.64);border:1px solid var(--stroke);border-radius:8px;backdrop-filter:blur(8px);box-shadow:none}
+.service h3{color:#f4f8fd}
+.service p{color:#acbed0}
+.service small,.service svg{color:#a0bbd3}
+.service:hover{border-color:rgba(209,231,250,.46);background:rgba(25,52,82,.78)}
+.app-heading p,.sectionhead p{color:#abbfd2}
+.tabs{background:rgba(8,24,43,.45);border:1px solid rgba(213,230,248,.13);border-radius:10px}
+.tab{color:#aec0d2;border-radius:7px}
+.tab.active{background:rgba(223,237,250,.17);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.quick-item,.stat,.panel,.table-wrap,.profile-head,.calendar-grid{background:rgba(12,32,54,.69);color:#ebf2fb;border:1px solid var(--stroke);border-radius:10px;box-shadow:0 13px 35px rgba(0,8,20,.08);backdrop-filter:blur(12px)}
+.quick-item:hover,.vehicle-tile:hover{border-color:rgba(189,220,244,.5);background:rgba(28,58,88,.88)}
+.quick-item strong{color:#eef5fc}
+.quick-item span,.stat span{color:#a4bad0}
+.quick-arrow{color:#bbd4ec}
+.iconbox{background:rgba(185,214,240,.13);color:#bed7ec;border-radius:8px}
+.stat b{color:#f4f8fd}
+th{background:rgba(203,221,240,.06);color:#a0b9cf}
+td{color:#ccdae8;border-color:rgba(216,234,248,.1)}
+td strong{color:#f1f6fb}
+tbody tr:hover{background:rgba(208,229,249,.08)}
+.chip{background:rgba(212,230,245,.12);color:#c9dbee}
+.chip.green{background:rgba(79,168,136,.16);color:#90e0bd}
+.chip.amber{background:rgba(230,170,89,.16);color:#f1ce98}
+.profile-head p{color:#b3c5d7}
+.avatar{background:linear-gradient(140deg,#2d5777,#1d3d62);color:#eaf3fd;border-radius:8px}
+.back,.micro,.muted{color:#abc0d2}
+.task,.list-row{border-color:rgba(216,234,248,.12);color:#edf4fb}
+.task small,.list-row span{color:#9eb7cb}
+.list-row>svg,.text-btn,.icon-btn{color:#b3d0e5}
+.search{background:rgba(9,27,46,.68);border-color:var(--stroke);color:#d9e8f4}
+.search input{background:transparent;color:#e8f2fb}
+.search input::placeholder,.inlineform input::placeholder{color:#879db3}
+.field{color:#b6c9dc}
+.field input,.field select,.inlineform input{background:rgba(5,22,41,.75);border:1px solid rgba(213,231,247,.21);color:#f4f8fd;border-radius:7px}
+.field select option{color:#101e30;background:#ecf2f8}
+.field input:focus,.field select:focus,.inlineform input:focus{border-color:#a6cce8;outline:none}
+.status-steps span{background:rgba(219,236,250,.07);color:#a7bbce}
+.status-steps .selected{background:rgba(154,198,229,.23);color:#e7f3ff}
+.status-column{background:rgba(9,28,48,.62);border:1px solid rgba(220,236,250,.13);border-radius:9px}
+.column-heading{border-color:#5d82a4}
+.column-heading h3{color:#eef5fb}
+.column-heading small,.tile-name{color:#a6bdd1}
+.column-count{background:rgba(211,229,246,.12);color:#d2e5f5}
+.status-progress .column-heading{border-color:#78b5df}
+.status-attention .column-heading{border-color:#d5b786}
+.status-late .column-heading{border-color:#d89196}
+.status-ready .column-heading{border-color:#78bbac}
+.vehicle-tile{background:rgba(31,56,82,.82);color:#f2f7fc;border:1px solid rgba(220,236,250,.13);border-radius:7px;box-shadow:none}
+.tile-stage{color:#afd0ea}
+.column-empty,.time-open{color:#849fb7}
+.journey-step{color:#8da8be}
+.journey-step:not(:last-child):before{background:rgba(202,227,249,.18)}
+.journey-step.complete:not(:last-child):before{background:#99c6e9}
+.journey-marker{background:#173855;border-color:rgba(226,240,252,.22);color:#a9c1d6}
+.journey-step.complete .journey-marker{background:#a8cfe9;color:#15304a;border-color:#a8cfe9}
+.journey-step.current .journey-marker{background:#254f73;border-color:#b7ddf7;color:#fff;box-shadow:0 0 0 4px rgba(154,206,243,.12)}
+.journey-step.complete,.journey-step.current{color:#f2f8fe}
+.journey-notice{background:rgba(126,88,45,.25);border-color:rgba(244,194,134,.2);color:#efd0a4}
+.time-row{border-color:rgba(218,237,249,.11)}
+.time-booking{background:rgba(115,162,198,.17);color:#e0effb}
+.time-booking span,.time-row time{color:#a7c0d4}
+.time-block{background:rgba(193,148,104,.13);color:#edca9f}
+.time-booking button,.time-block button{color:#c1def1}
+.portal .notice{background:rgba(140,184,218,.09);border-color:var(--stroke);color:#bbcee0}
+.portal-car{color:#a4cae5}
+.portal-car h2{color:#f1f7ff}
+.portal-car span{color:#b3c4d5}
+.footer{background:#061322;border-top:1px solid rgba(214,232,249,.12);color:#eff6ff}
+.footer span{color:#a9bfd2}
+.overlay{background:rgba(1,11,21,.82);backdrop-filter:blur(10px)}
+.modal{background:#102740;color:#eaf3fc;border:1px solid rgba(227,239,250,.17);border-radius:12px}
+.modal h2{color:#f2f8fe}
+.empty{color:#aec4d7}
+.empty b{color:#eef4fa}
+.empty span{color:#adc0d1}
+@media(max-width:670px){
+ .nav{background:#0a1f34;border-color:rgba(214,233,249,.16)}
+ .nav a,.nav-link{color:#e3eef9}
+ .hero{padding-top:65px}
+ .hero h1{font-size:clamp(3.15rem,12vw,5rem)}
+ .hero-visual{border-radius:8px}
+ .quick-item,.stat,.panel,.profile-head,.status-column{border-radius:8px}
+}
