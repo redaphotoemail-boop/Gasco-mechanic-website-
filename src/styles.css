@@ -328,3 +328,23 @@ tbody tr:hover{background:rgba(208,229,249,.08)}
   .gasco-services .service .service-copy{margin-top:26px}
   .gasco-services .service h3{font-size:29px}
 }
+
+/* Gasco mobile location legibility: deliberate line breaks, no horizontal clipping */
+.gasco-visit,.gasco-visit>div{min-width:0}
+.gasco-visit h2{overflow-wrap:normal}
+.gasco-address-card{min-width:0;max-width:100%}
+.gasco-address-card h3{max-width:100%;width:100%;white-space:normal;overflow-wrap:normal}
+.gasco-address-card h3 span{display:block}
+@media(max-width:700px){
+ .gasco-visit{grid-template-columns:minmax(0,1fr);padding:66px 6% 82px;gap:30px}
+ .gasco-visit h2{font-size:clamp(2.9rem,10.7vw,4.5rem);line-height:.96;letter-spacing:-.02em;max-width:100%}
+ .gasco-address-card{min-height:305px;padding:27px 23px;overflow:hidden}
+ .gasco-address-card h3{font-size:clamp(2.7rem,11.5vw,4.8rem);line-height:.92;letter-spacing:-.025em;margin:26px 0 18px}
+ .gasco-address-card h3 span{white-space:nowrap}
+ .gasco-visit .actions{gap:10px}
+ .gasco-visit .actions .btn{min-height:44px}
+}
+@media(max-width:390px){
+ .gasco-address-card h3{font-size:clamp(2.4rem,11vw,3.7rem)}
+ .gasco-address-card{padding:23px 18px}
+}
